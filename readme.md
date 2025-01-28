@@ -69,7 +69,7 @@ DATABASE_NAME=your_db_name
    ```
 
 3. **Interact with the Bot**
-   Use the provided `getAI` function to send prompts and receive responses.
+   Use the provided `genAI` function to send prompts and receive responses.
 
 ## 📂 Code Overview
 
@@ -77,11 +77,11 @@ DATABASE_NAME=your_db_name
 
 - `app.js`: Entry point for the application.
 - `database.js`: Handles database interactions for logging events and retrieving messages.
-- `getAI.js`: Core logic for interacting with OpenAI's GPT model and managing conversation threads.
+- `genAI.js`: Core logic for interacting with OpenAI's GPT model and managing conversation threads.
 
-### getAI Function
+### genAI Function
 
-The `getAI` function supports:
+The `genAI` function supports:
 
 - **Memory Retrieval:** Uses embeddings and cosine similarity to find relevant past messages.
 - **Dynamic Prompts:** Generates system prompts with real-time context (e.g., EST time).
@@ -135,13 +135,13 @@ Feel free to open issues or submit pull requests to improve this project.
 ### 💡 Example Usage
 
 ```javascript
-const { getAI } = require('./getAI');
+const { genAI } = require('./genAI');
 
 (async () => {
   const senderID = 'user123';
   const prompt = 'What can you remember about my favorite pet?';
 
-  const response = await getAI(senderID, prompt);
+  const response = await genAI(senderID, prompt);
   console.log(response.body);
 })();
 ```
