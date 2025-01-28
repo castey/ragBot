@@ -7,7 +7,9 @@ This Node.js project creates an interactive chatbot using OpenAI's GPT-4 model, 
 - **TensorFlow.js** with the Universal Sentence Encoder for embedding-based memory retrieval.
 - **Cosine Similarity** to find relevant conversations in the database.
 
-![Example Output](example.png)
+<div align="center">
+  <img src="example.png" alt="Example Output">
+</div>
 
 ## 🚀 Features
 
