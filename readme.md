@@ -61,6 +61,7 @@ DATABASE_NAME=your_db_name
    ```
 
 2. **Run the Application**
+
    Start the chatbot by running:
 
    ```bash
