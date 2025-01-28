@@ -151,3 +151,4 @@ const { chat } = require('./genAI');
 - OpenAI for the GPT-4 API.
 - TensorFlow.js for text embedding models.
 - Chalk for making console output visually appealing.
+- ChatGPT for helping me write this silly readme
